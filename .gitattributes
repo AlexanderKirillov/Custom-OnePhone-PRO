@@ -1,1 +1,2 @@
-*.rb linguist-language=Java
+app/* linguist-vendored 
+app/* linguist-language=Java
