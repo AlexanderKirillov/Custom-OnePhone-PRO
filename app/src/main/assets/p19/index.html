@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <head>
+  </head>
+  <body><span style="line-height: 1.5;">
+	
+	<div style="text-align: center;"><span style="color: rgb(255, 102, 0); font-size: x-large;">Заливка прошивки в пустой телефон в режиме рекавери</span></div>
+	<div style="text-align: center;">
+	  <hr/>
+	  <font color="white">
+		<div style="text-align: left;"><font size="3">Если Вы сталкивались с перепрошивкой телефона хоть раз, то возможно перед вами возникал вопрос о том, как прошить телефон, если сделаны все вайпы, в том числе и накопителя, и телефон оказался "пустой"- т.е вы не могли его ни включить, ни установить прошивку.</font></div>
+		<div style="text-align: left;"><font size="3">Специально для этого случая придумали способ закидывания прошивки в телефон в режиме рекавери при помощи ADB Sideload.</font></div>
+		<div style="text-align: left;"><font size="3">Далее я вам расскажу Вам, как воспользоваться данным методом.</font></div>
+		<div style="text-align: left;"><font size="3"><br /></font></div>
+		<div style="text-align: left;"><font color="#de6909" size="5">ADB Sideload</font><font size="3">:</font></div>
+		<div style="text-align: left;"><font size="3"><font color="#de6909"><b>1)</b></font> Установите соответствующее рекавери, поддерживающее Sideload (CWM или TWRP).&nbsp;</font></div>
+		<div style="text-align: left;"><font size="3">Узнать, поддерживает ли рекавери ADB Sideload Вы можете в теме "прошивки" для Вашего устройства.</font></div>
+		<div style="text-align: left;"><font size="3">Более всего рекомендуется рекавери TWRP, т.к оно 100% поддерживает ADB Sideload. Далее будем рассматривать пункты на примере TWRP</font></div>
+		<div style="text-align: left;"><font size="3"><font color="#de6909"><b>2)</b></font> Открываем рекавери и заходим в Advanced-&gt; ADB Sideload и свайпаем вправо</font></div>
+		<div style="text-align: left;"><font size="3"><font color="#de6909"><b>3)</b></font> На компьютере устанавливаем <a href="https://yadi.sk/d/1PdWp5-Ti6JpZ" target=""><font color=orange>следующие</font></a>&nbsp;драйвера. Они совместимы со всеми устройствами, которые поддерживают Sideload.</font></div>
+		<div style="text-align: left;"><font size="3"><font color="#de6909"><b>4)</b></font> Копируем файл прошивки&nbsp;</font><span style="font-size: medium;">в папку с ADB и FASTBOOT (предварительно нужно найти в теме "прошивки" для вашего устройства).&nbsp;<br /><b><font color="red">ПРОБЕЛЫ В НАЗВАНИИ НЕ ДОПУСКАЮТСЯ!</font></b></span></div>
+		<div style="text-align: left;"><span style="font-size: medium;"><font color="#de6909"><b>5)</b></font> Открываем командную строку в папке с ADB и FASTBOOT</span></div>
+		<div style="text-align: left;"><span style="font-size: medium;"><font color="#de6909"><b>6)</b></font> Вводим в нее:</span></div>
+		<div style="text-align: left;">
+		  <hr /><font size="3">adb sideload ИМЯ_ПРОШИВКИ.zip</font></div>
+		<div style="text-align: left;">
+		  <hr /><font size="3"><font color="#de6909"><b>7)</b></font> В командной строке должно отобразится: sending sideload 1%. Если это отобразилось, то ждите несколько минут, и на телефоне начнется привычная установка прошивки. Если же в строке отобразился другой текст, повторите пункты 3,4,5,6.</font></div>
+		<div style="text-align: left;"><font size="3"><br /></font></div>
+		<div style="text-align: left;"><font size="3">Также существует другой способ закидывания прошивки в пустой телефон.</font></div>
+		<div style="text-align: left;"><font size="3">Он выполняется с использованием Total Commander и соответствующего плагина.</font></div>
+		<div style="text-align: left;"><font size="3">Его Вы можете найти <a href="http://4pda.ru/forum/index.php?s=&showtopic=404265&view=findpost&p=24546163" target=""><font color=orange>здесь</font></a>.</font></div>
+		<div style="text-align: left;"><font size="3">При возникновении любых вопросов, свяжитесь со мной.</font></div></font></div></span></body></html>

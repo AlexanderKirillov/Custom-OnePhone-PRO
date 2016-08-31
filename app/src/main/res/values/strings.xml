@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Custom OnePhone Pro</string>
+    <string name="app_name1">COP PRO</string>
+    <string-array name="Menu_Titles">
+        <item>Инструкции</item>
+        <item>Соглашение</item>
+        <item>Связаться с разработчиком</item>
+		<item>Полезные ссылки</item>
+		<item>Благодарности</item>
+        <item>О программе</item>
+    </string-array>
+    <string-array name="Menu_imageForTitles">
+        <item>home</item>
+        <item>warning</item>
+        <item>mail</item>
+		<item>useful</item>
+		<item>star</item>
+        <item>info</item>
+    </string-array>
+    <string-array name="List_Titles">
+		<item>Вступление для новичков</item>
+        <item>Термины и глоссарий</item>
+        <item>Разблокировка/обратная блокировка загрузчика</item>
+        <item>Получение Root прав на всех HTC</item>
+        <item>Прошивка ядра и рекавери</item>
+        <item>О рекавери</item>
+        <item>Сервисные коды</item>
+        <item>Восстановление полукирпича</item>
+        <item>Установка кастомной прошивки</item>
+        <item>Описание режимов ЦП и планировщиков</item>
+        <item>Получение S-OFF</item>
+        <item>Получение SuperCID</item>
+        <item>Прошивка радиомодуля</item>
+        <item>Русификация прошивки без ROOT</item>
+        <item>Удаление *TAMPERED* из загрузчика HTC One M7</item>
+        <item>Таблица CID</item>
+        <item>Смена анимации загрузки</item>
+		<item>Список разделов всех моделей HTC One M9</item>
+		<item>ADB Sideload</item>
+        <item>Обновляем HBOOT и RADIO (Через firmware.zip)</item>
+		<item>Калибровка батареи</item>
+		<item>Что проверить при покупке смартфона HTC</item>
+		<item>Резервирование всех разделов HTC One M7</item>
+		<item>Резервирование всех разделов HTC One M8</item>
+		<item>Смена MID на HTC One M8</item>
+		<item>Прошиваем вручную OTA обновление</item>
+		<item>Удаление *TAMPERED* из загрузчика HTC One M8</item>
+		<item>Восстанавливаем стертый IMEI</item>
+		<item>Ускорение поиска спутников GPS</item>
+		<item>Возвращение устройства в заводское состояние</item>
+		<item>Установка Adobe Flash Player (Android 2.X-4.4+)</item>
+		<item>О файле DEMO.apk</item>
+		<item>Деодексирование/одексирование прошивки</item>
+		<item>Делаем аналог РСТ устройства из не РСТ</item>
+		<item>Настраиваем чтение/запись данных на SD карту</item>
+		<item>Прошиваем ядро и рекавери без использования ПК\nСпециализированная программа</item>
+		<item>Как отличить оригинал устройства от копии</item>
+		<item>Отвязка HTC One M8 Sprint от оператора</item>
+		<item>Знакомство с Xposed Installer</item>
+		<item>Восстанавливаем работу 4G (HTC One E8)</item>
+	</string-array>
+</resources>

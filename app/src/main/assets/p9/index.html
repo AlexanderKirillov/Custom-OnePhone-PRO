@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <body><span style="line-height: 1.5;">
+	  <center><b><font color="#de6909" size=6>Установка кастомных прошивок с нуля</font></b></center>
+	<hr><p></p>
+	<font color=white><font size=3><center><font color=orange size=5><b>Сразу определитесь, будете ли вы разблокировывать бутлоадер. Это ведет к потере гарантии!</b></font></center><p></p>
+		
+		Если вы хотите установить пользовательскую версию ОС (Custom ROM) или кастомное ядро, вам нужно, чтобы ваш загрузчик был разблокирован. Говоря простым языком: разблокировка загрузчика позволяет устанавливать пользовательские прошивки телефона Android.<p></p>
+
+		<b><font color="#de6909">Плюсы разблокировки:</font></b><br>
+		<font color="#de6909"><b>1)</b></font> Установка кастомных ядер + нестираемые рут и рекавери в них<br>
+		<font color="#de6909"><b>2)</b></font> Неограниченая установка кастомных прошивок<br>
+		<font color="#de6909"><b>3)</b></font> Разгон ЦП<p></p>
+
+		<b><font color="#de6909">Минусы разблокировки:</font></b><br>
+		<font color="#de6909"><b>1)</b></font> Полная потеря официальной гарантии HTC (для РСТ телефонов)<p></p>
+		<hr>
+		<center><font color="#de6909" size=5><b>Установка кастомов для разблокированного бутлоадера</b></font></center><p></p>
+
+		<font color="#de6909"><b>1)</b></font> Разблокировать бутлоадер <font color=orange>(после этого произойдет сброс всех настроек)</font><br>
+		<font color="#de6909"><b>2)</b></font> Прошить любое кастомное ядро из шапки темы "Прошивки" Вашего устройства на 4PDA через fastboot <font color=orange>(соблюдая одинаковые версии Android: ядра и прошивки. Если есть S-OFF- прошивать ядро не надо)</font><br>
+		<font color="#de6909"><b>3)</b></font> Скачать саму кастомную прошивку и закинуть ее на телефон<br>
+		<font color="#de6909"><b>4)</b></font> Перезагрузится и зайти в рекавери<br>
+		<font color="#de6909"><b>5)</b></font> В рекавери сделать:<br>
+		<b><font color="#de6909">На примере CWM:</font></b><br>
+		<b>Wipe User Data</b> - <font color=orange>не нужно делать при обновлении версии одной прошивки</font><br>
+		<b>Wipe Cache</b><br>
+		<b>Advanced</b> => Wipe Dalvik Cache<br>
+		<b>Mounts and Storage</b> => Format System<br>
+		<b><font color="#de6909">На примере TWRP:</font></b><br>
+		<b>Wipe</b>-> Advanced Wipe-> выбираем все, кроме внутренней памяти (Internal Storage) и карты памяти (<font color=orange>не нужно делать при обновлении версии одной прошивки</font>)<br>
+		<font color="#de6909"><b>6)</b></font> В рекавери в главном меню нажать <br>
+        <b><font color="#de6909">На примере CWM:</font></b><br>
+		Install zip from sdcard<br>
+		<b><font color="#de6909">На примере TWRP:</font></b><br>
+		Install<br>
+		Найти в папках вашу прошивку и подтвердить установку.<br>
+		<font color="#de6909"><b>7)</b></font> Перезагрузится и радоваться
+	  </font></font></span></body></html>

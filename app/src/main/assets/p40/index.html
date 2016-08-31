@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+  <title></title>
+</head>
+
+
+<body>
+
+<span style="line-height: 1.5;">
+<div style="text-align: center;"><big style="color: #de6909; font-weight: bold;"><big>Восстановление работы 4G <br>
+
+
+
+
+
+
+(HTC One E8 Dual Sim)<br>
+
+
+
+
+
+
+
+
+</big></big>
+<div style="text-align: left;"><big style="color: rgb(204, 102, 0);"><big><span style="font-weight: bold;">Требования:</span></big></big><br>
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+- Компьютер на базе OS Windows c&nbsp; установленными драйверами</span><span style="font-weight: bold;"><br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+</span></div>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(255, 0, 0);"></span></div>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(0, 153, 0);">1)</span><span style="color: rgb(255, 255, 255);"> Возвращаем стоковую прошивку.</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">1.1)</span> <span style="color: rgb(255, 255, 255);">Качаем
+бэкап стока из шапки прошивок соответствующей темы вашего устройства и
+восстанавливаем его через кастомное рекавери. В данном случае, мы
+смотрим в шапку темы</span> <a style="color: rgb(204, 102, 0);" href="http://4pda.ru/forum/index.php?showtopic=598273&amp;view=findpost&amp;p=33786133">HTC One E8 Dual Sim-прошивки</a><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <br>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(0, 153, 0);">2)</span><span style="color: rgb(255, 255, 255);"> Восстанавливаем стоковый рекавери.</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">2.1)</span> <span style="color: rgb(255, 255, 255);">Находим и скачиваем файл стокового рекавери для Вашего устройства (найти можно в теме "Прошивки" вашего устройства на 4PDA)</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">2.2)</span> <span style="color: rgb(255, 255, 255);">Закидываем данный файл в папку с файлами adb и fastboot.</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 153, 0); font-weight: bold;">2.3)</span> <span style="color: rgb(255, 255, 255);">Последовательно из папки с&nbsp; ADB и FASTBOOT&nbsp;даём команды:</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+--------------------------------------------</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+adb reboot-bootloader &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+fastboot flash recovery recovery.img &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+fastboot erase cache &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+fastboot reboot</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+--------------------------------------------</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span> <span style="color: rgb(255, 255, 255);">Блокируем бутлоадер</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">3.1)</span> <span style="color: rgb(255, 255, 255);">Перезагружаем аппарат в BootLoader</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">3.2)</span> <span style="color: rgb(255, 255, 255);">Подключаемся к ББ, запускаем cmd.</span><br>
+
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; color: rgb(0, 153, 0);">3.3)</span> <span style="color: rgb(255, 255, 255);">Входим в папку с ADB &nbsp;и FASTBOOT и вводим</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+--------------------------------------------</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+fastboot oem lock</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+--------------------------------------------</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(0, 153, 0);">4)</span><span style="color: rgb(255, 255, 255);"> После
+перезагрузки устройства&nbsp;делаем сброс на заводские настройки из
+меню телефона (Настройки-&gt;Резервное копирование и сброс-&gt;
+Сбросить настройки телефона).</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+<span style="color: rgb(255, 255, 255);">
+Галочки по удалению всех данных и очистку SD карты можно не ставить.</span><br style="color: rgb(255, 255, 255);">
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<span style="font-weight: bold; color: rgb(255, 0, 0);"></span>
+</span>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+  <body><span style="line-height: 1.5;"><font color=white><h4>
+		  <p style="text-align: center; margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="5" color="#de6909">Ускорение поиска спутников GPS</font></p>
+		  <p style="text-align: center; margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="5" color="#ff0000"><br /></font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">Если вас не устраивает длительное время поиска спутников GPS на вашем устройстве, то вам нужна именно эта инструкция!</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">Для ускорения поиска спутников нам понадобится отредактировать файл&nbsp; gps.conf, который можно найти по следующему пути: system/etc/gps.conf.</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">В этом файле, кроме всего прочего находится информация о NTP сервере, и нам нужно изменить конфигурацию, введя данные о ближайшем к нашему местоположению сервере. Если сервер выбран правильно,&nbsp; любое устройство на поиск спутников будет тратить десятки секунд, а не несколько минут как раньше.&nbsp;</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font color="#ff6600" size="4">Требования:</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;">
+		  </p>
+		  <ul>
+			<li><span style="font-family: verdana; line-height: 1.5em;"><font size="3">&nbsp;Наличие Root прав</font></span></li></ul>
+		  <p></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><strong><font color="#ff6600" size="4">Инструкция:</font></strong></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font color="#339966" size="3" style="font-weight: bold;">1) </font><font size="3" style="font-weight: normal;">Скачиваем любой файловый менеджер, работающий с Root правами (Например, Root Exploler)</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3"><strong><font color="#339966">2)</font></strong>&nbsp;Запускаем файловый менеджер</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3"><font color="#339966">3)</font><span style="font-weight: normal;">&nbsp;Переходим в каталог system/etc и находим файл gps.conf</span></font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3"><font color="#339966">4)</font><span style="font-weight: normal;">&nbsp;Открываем редактор текста</span></font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3"><strong><font color="#339966">5)</font></strong>&nbsp;Mеняем эту строку:</font></p>
+		  <blockquote style="font-family: Verdana, 'Trebuchet MS', sans-serif; font-weight: normal; line-height: 15.600000381469727px;">
+			<p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><strong><font size="3">NTP_SERVER=north-america.pool.ntp.org</font></strong></p>
+		  </blockquote>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">На строку (для России):</font></p>
+		  <blockquote style="font-family: Verdana, 'Trebuchet MS', sans-serif; font-weight: normal; line-height: 15.600000381469727px;">
+			<p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><strong><font size="3">&nbsp;NTP_SERVER=ru.pool.ntp.org</font></strong></p>
+		  </blockquote>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">Если вы находитесь не в России, то строка для разных стран выглядит так:</font></p>
+		  <blockquote style="font-family: Verdana, 'Trebuchet MS', sans-serif; font-weight: normal; line-height: 15.600000381469727px;">
+			<p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3">Украина:<strong>&nbsp;NTP_SERVER=ua.pool.ntp.org</strong></font></p>
+			<p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3">Беларусь:&nbsp;<strong>NTP_SERVER=by.pool.ntp.org</strong></font></p>
+			<p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3">Германия:&nbsp;<strong>NTP_SERVER=de.pool.ntp.org</strong></font></p>
+		  </blockquote>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">И так далее. Найти наименование ntp сервера для своей страны вы можете <a href="http://www.pool.ntp.org/zone/@" target=""><font color="#ff6600">здесь</font></a></font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em;"><font size="3"><font color="#339966">6)</font><span style="font-weight: normal;">&nbsp;Сохраняем файл и перегружаем устройство!</span></font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">&nbsp;</font></p>
+		  <p style="margin-top: 0px; margin-bottom: 5px; font-family: Verdana, 'Trebuchet MS', sans-serif; line-height: 1.5em; font-weight: normal;"><font size="3">Теперь вы можете проверить работу GPS. Поиск спутников теперь должен занимать менее одной минуты.</font></p>
+		</h4></font></span></body></html>

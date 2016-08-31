@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<span style="line-height: 1.5;">
+<h4 style="color: white; text-align: center;"><font color="#de6909" size="5"><span style="line-height: 1.5;">Деодексирование\одексирование прошивки</span></font></h4>
+
+
+<h4 style="color: white;"><span style="line-height: 1.5;"><font size="3"><span style="font-weight: normal;">Почти все APK (в системном разделе) в стоковой прошивке сопровождаются файлом ODEX. Часть приложения (а именно сам java код) содержится как раз в этом файле. Поэтому любое изменение самого apk файла должно сопровождаться соответствующей правкой файла ODEX. Умельцы преобразовали файлы </span><font color="#ff6600" style="font-weight: normal;">программа.ODEX</font><span style="font-weight: normal;"> в </span><font color="#ff6600" style="font-weight: normal;">classes.odex</font><span style="font-weight: normal;"> и запихнули их внутрь файлов APK, тем самым уменьшили размер прошивки и самое главное - теперь сами APK-файлы можно менять как угодно, на работу системы это роковым образом не влияет. Вот это называется </span>деодексирование<span style="font-weight: normal;">.</span></font></span></h4>
+<h4 style="color: white;"><span style="font-weight: normal; line-height: 1.5;"><font size="3">Чем это хорошо - в деодексированной прошивке можно запросто открыть архиватором APK-файл, поменять в нём ресурсы (картинки и т.п.) и вернуть изменённый файл на место в прошивку. В обычной же это приводит к краху системы... Одексирование само по себе является оптимизацией того самого java кода под конкретный процессор/устройство. То есть теперь конкретно и по делу: файл *.odex содержит перекомпилированый java код программы под конкретное устройство, а файл classes.dex в корне файла *.apk содержит java код, который может быть выполнен на любом устройстве. Это и есть сердце Андроида: виртуальная java машина "Dalvik". А это все вместе означает, что система каждый раз будет пытаться прекомпилировать все classes.dex находящиеся в apk при их отсутствии в папке dalvik-cache.</font></span></h4>
+<h4 style="color: white;"><span style="font-weight: normal; line-height: 1.5;"><font size="3">Сейчас мы рассмотрим наиболее простой и безопасный способ деодексирования и одексирования прошивки прямо с телефона!</font></span></h4>
+
+
+<div style="color: white;"><font color="#ff6600" size="4"><span style="line-height: 1.5;"><b>Требование для деодексирования\одексирования:</b></span></font></div>
+
+
+<div style="color: white;">
+<div><font size="3"><span style="line-height: 1.5;">- Наличие Root прав</span></font></div>
+<div><font size="3"><span style="line-height: 1.5;">- Наличие установленного busybox</span></font></div></div>
+
+
+<div style="color: white; line-height: 1.5;"><font size="3"><br />
+
+
+</font></div>
+
+
+<div style="color: white;"><font color="#ff6600" size="4"><span style="line-height: 1.5;"><b>Деодексируем...</b></span></font></div>
+
+
+<div>
+<div><font size="3"><span style="line-height: 1.5;"><b style="color: rgb(0, 128, 0);">1) </b><font color="#ffffff">Покупаем программу </font><a href="https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup" target=""><font color="#ff6600">Titanium Backup PRO</font></a></span></font></div>
+<div style="color: white;"><font size="3"><span style="line-height: 1.5;"><b style="color: rgb(0, 128, 0);">2) </b>Открываем программу и предоставляем ей Root доступ</span></font></div>
+<div style="color: white;"><font size="3"><span style="line-height: 1.5;"><b style="color: rgb(0, 128, 0);">3) </b>Открываем меню и выбираем пункт "Отмена sysDalvik интеграции" и подтверждаем выбор (Если нужно)</span></font></div>
+<div style="color: white;"><font size="3"><span style="line-height: 1.5;"><font color="#008000" style="font-weight: bold;">4) </font>Устройство само перезагрузится и ваша прошивка будет deodex'ирована</span></font></div></div>
+
+
+<div style="color: white; line-height: 1.5;"><font size="3"><br />
+
+
+</font></div>
+
+
+<div style="color: white;"><font color="#ff6600" size="4"><span style="line-height: 1.5;"><b>Одексируем...</b></span></font></div>
+
+
+<div style="line-height: 1.5;">
+
+<div>
+<div><font size="3"><b style="color: white;"><font color="#008000">1)</font></b><font color="#ffffff"> Покупаем программу </font><a href="https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup" target=""><font color="#ff6600">Titanium Backup PRO</font></a></font></div>
+<div style="color: white;"><font size="3"><b><font color="#008000">2)</font></b> Открываем программу и предоставляем ей Root доступ</font></div>
+<div style="color: white;"><font size="3"><b><font color="#008000">3)</font></b> Открываем меню и выбираем пункт "Oчистка Dalvik-кэша" и подтверждаем выбор (Если нужно)</font></div>
+<div style="color: white;"><font size="3"><b><font color="#008000">4)</font></b> После того, как кеш очистился, открываем меню и выбираем пункт "Интеграция sysDalvik в ROM". Если нужно, подтверждаем выбор и ждем завершения одексирования.</font></div>
+<div style="color: white;"><font size="3"><b><font color="#008000">5)</font></b> Перезагружаем устройство. Прошивка одексирована.</font></div></div>
+
+<big style="color: white;">
+</big></div>
+</span>
+</body>
+</html>

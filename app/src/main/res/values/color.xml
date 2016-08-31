@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dividerList">#de6909</color>
+    <color name="dividerMenu">#de6909</color>  
+    <color name="borderColorList">#de6909</color>
+    <color name="BGColorList">#ff212121</color> 
+    <color name="BGColorMenu">#ff212121</color>
+    <color name="TextMenuColor">#F88221</color> 
+    <color name="TextListColor">#FFFFFF</color>
+    <color name="purple_light">#a276eb</color>
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+</resources>

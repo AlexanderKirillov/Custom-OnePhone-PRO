@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <body><span style="line-height: 1.5;">
+
+	  <center><font color="#de6909" size=6><b>Как прошивать ядро/рекавери через fastboot</b></font></center><p></p>
+	  <hr>
+	  <font color=white><center><font color="#de6909" size=5><b>Функции ядра</b></font></center><p></p>
+		<center><img src="kernel.png"></center><p></p>
+		<hr>
+		<center><font color="#de6909" size=4><b>Прошивка ядра через fastboot</b></font></center>
+		<font size=3><font color="#de6909"><b>1)</b></font>  папку с <b>adb и fastboot</b>, располагаем ее в корне вашего диска <b>C:\</b>, и присваиваем папке имя adb+fastboot (cкачать можно <a href="https://yadi.sk/d/FRABqf5qi5nmx"><font color=orange>здесь</font></a>)<p></p>
+		  <font color="#de6909"><b>2)</b></font> Скачиваем файл ядра или извлекаем его из архива с прошивкой (<b>boot.img</b>)<p></p>
+		  <font color="#de6909"><b>3)</b></font> Копируем файл ядра <b>boot.img</b> в папку с <b>adb и fastboot</b> (возле файла <b>fastboot.exe</b>)<p></p>
+		  <font color="#de6909"><b>4)</b></font> Выключаем устройство.<p></p>
+		  <font color="#de6909"><b>5)</b></font> Загружаем устройство в режиме fastboot (<b>громкость вниз и кнопка ВКЛ</b>. После этого подключаем девайс к ПК)<p></p>
+		  <font color="#de6909"><b>6)</b></font> Открываем командную строку (cmd)<p></p>
+		  <font color="#de6909"><b>7)</b></font> Вводим следующие команды поочередно, чтобы прошить ядро <b>boot.img</b>
+		  <hr>
+		  cd c:\adb+fastboot<br>
+		  fastboot flash boot boot.img
+		  <hr>
+		  <font color="#de6909"><b>8)</b></font> Перезагружаем телефон и пользуемся.<p></p><br></font>
+		<center><font color="#de6909" size=4><b>Прошивка рекавери через fastboot</b></font></center>
+		<font size=3><font color="#de6909"><b>1)</b></font> Скачиваем папку с <b>adb и fastboot</b>, располагаем ее в корне вашего диска <b>C:\</b>, и присваиваем папке имя adb+fastboot (cкачать можно <a href="https://yadi.sk/d/FRABqf5qi5nmx"><font color=orange>здесь</font></a>)<p></p>
+		  <font color="#de6909"><b>2)</b></font> Скачиваем файл рекавери (<b>recovery.img</b>)<p></p>
+		  <font color="#de6909"><b>3)</b></font> Копируем файл рекавери <b>recovery.img</b> в папку с <b>adb и fastboot</b> (возле файла <b>fastboot.exe</b>)<p></p>
+		  <font color="#de6909"><b>4)</b></font> Выключаем устройство.<p></p>
+		  <font color="#de6909"><b>5)</b></font> Загружаем устройство в режиме fastboot (<b>громкость вниз и кнопка ВКЛ</b>. После этого подключаем девайс к ПК)<p></p>
+		  <font color="#de6909"><b>6)</b></font> Открываем командную строку (cmd) <p></p>
+		  <font color="#de6909"><b>7)</b></font> Вводим следующие команды поочередно, чтобы прошить рекавери (<b>recovery.img</b>)
+		  <hr>
+		  cd c:\adb+fastboot<br>
+		  fastboot flash recovery recovery.img
+		  <hr>
+		  <font color="#de6909"><b>8)</b></font> Перезагружаем телефон и пользуемся.<p></p><br></font>
+		<font color=orange size=4><b>Примечание:</b></font><br>
+		<font size=3>- Файл ядра/рекавери <b>boot.img/recovery.img</b> можно переименовать как вам удобно, к примеру <b>mykernel_v2.img</b>/<b>myrecovery.img</b>. При этом в командной строке вы должны указать нужное вам имя ядра/рекавери при установке.</font>
+	  </font></span></body>
+</html>

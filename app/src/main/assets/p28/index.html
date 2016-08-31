@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><meta charset="UTF-8"></head>
+  <body><span style="line-height: 1.5;"><font color="white" size="3">
+		<h4 style="text-align: center;"><font color="#de6909" size="5">Восстанавливаем IMEI!</font></h4>
+		<div><font size="3">Некоторые пользователи наверно сталкивались с тем, что после перепрошивки или сброса данных на телефоне стирался IMEI</font></div>
+		<div><font size="3">В этой инструкции я расскажу Вам, как восстановить IMEI после неудачной прошивки или ресета.</font></div>
+		<div><font size="3"><br /></font></div>
+		<div><font color="#ff6600" size="4"><b>Требования:</b></font></div>
+		<div>
+		  <ul>
+			<li><font size="3">Наличие Root прав</font></li>
+			<li><font size="3">Рекомендуется наличие S-OFF</font></li>
+			<li><font size="3" color="#ff0000"><b>Необходимо знать свой потерянный IMEI!</b></font></li></ul>
+		  <div><font color="#ff6600" size="4"><b>Приступаем...</b></font></div></div>
+		<hr>
+		<div class="spoil">
+		  <div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#de6909;color:white" value="Способ №1" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Способ №1'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Способ №1'; }"/>
+		  </div>
+		  <div class="alt2">
+            <div style="display: none;">
+			  <div><font size="3"><b><font color="#339966">1)</font></b> Заходим в стоковую звонилку и вводим туда:</font></div>
+			  <div><font size="3">*#*#3646633#*#*</font></div>
+			  <div><font size="3"><b><font color="#339966">2)</font></b>&nbsp;Откроется инженерное меню, в котором необходимо пролистать вправо на вкладку &laquo;Connectivity&raquo; и найти пункт &laquo;CDS information&raquo; и нажать на него</font></div>
+			  <div><font size="3"><b><font color="#339966">3)</font></b>&nbsp;Далее в новом списке ищем пункт &laquo;Radio Information&raquo; и жмем на него</font></div>
+			  <div><font size="3"><b><font color="#339966">4)</font></b>&nbsp;Выбираем Phone и в поле надписи AT+ и введите EGMR=1,7,&rdquo;IMEI&raquo;, где IMEI ваш imei номер.</font></div>
+			  <div><font size="3"><img src="screen.jpg"></font></div>
+			  <div><font size="3"><b><font color="#339966">5)</font></b> Нажимаем "Send at command"</font></div>
+			  <div><font size="3"><b><font color="#339966">6)</font></b> Перезагружаем устройство и проверяем наличие IMEI!</font></div>
+			</div></div></div><hr>
+		<div class="spoil">
+		  <div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#de6909;color:white" value="Способ №2" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Способ №2'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Способ №2'; }"/>
+		  </div>
+		  <div class="alt2">
+            <div style="display: none;">
+			  <div><font size="3"><b><font color="#339966">1)</font></b> Устанавливаем любой файловый менеджер, работающий с рут правами</font></div>
+			  <div><font size="3"><b><font color="#339966">2)</font></b> Скачиваем архив <a href="https://yadi.sk/d/A_cQjE_DLx7Zg" target=""><font color="#ff6600">restore_imei</font></a></font></div>
+			  <div><font size="3"><b><font color="#339966">3)</font></b> Разархивируем архив на ваш ПК в отдельную папку</font></div>
+			  <div><font size="3"><b><font color="#339966">4)</font></b>&nbsp;Открываем файл run.bat текстовым редактором (Например, через Notepad++)</font></div>
+			  <div><font size="3">Теперь вместо указанных цифр в файле прописываем imei от устройства</font></div>
+			  <div><font size="3"><br /></font></div>
+			  <div><font size="3">Пример:</font></div>
+			  <div class="su-note" style="box-sizing: border-box; border: 1px solid rgb(229, 229, 92); font-family: 'Source Sans Pro', sans-serif; margin: 0px 0px 1.5em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(115, 115, 115); font-size: 16px; line-height: 25.600000381469727px; background-color: rgb(255, 255, 255); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+				<div class="su-note-inner su-clearfix" style="box-sizing: border-box; border: 1px solid rgb(255, 255, 224); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 1em; vertical-align: baseline; background-color: rgb(255, 255, 102); color: rgb(51, 51, 51); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">imei.exe 353670041346035 353670041346043</div></div>
+			  <div><font size="3" color="#339966"><b>5)&nbsp;</b></font><font size="3">Сохраняем файл. Теперь запускаем данныц файл run.bat (который мы редактировали).</font></div>
+			  <div><font size="3"><br /></font></div>
+			  <div><font size="3">Если все прошло успешно, то у нас в папке появится файл MP0B_001, который необходимо скопировать на смартфон.</font></div>
+			  <div><font size="3" color="#339966"><b>6)&nbsp;</b></font><font size="3">На устройстве открываете проводник, работающий с рут привелегиями и копируете полученный файл MP0B_001 в папку</font></div>
+			  <div><br /></div>
+			  <div>
+				<div class="su-note" style="box-sizing: border-box; border: 1px solid rgb(229, 229, 92); font-family: 'Source Sans Pro', sans-serif; margin: 0px 0px 1.5em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(115, 115, 115); font-size: 16px; line-height: 25.600000381469727px; background-color: rgb(255, 255, 255); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+				  <div class="su-note-inner su-clearfix" style="box-sizing: border-box; border: 1px solid rgb(255, 255, 224); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 1em; vertical-align: baseline; background-color: rgb(255, 255, 102); color: rgb(51, 51, 51); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"><span style="color: rgb(0, 0, 0); font-family: verdana; font-size: medium; line-height: normal;">/data/nvram/md/NVRAM/NVD_IMEI/MP0B_001</span></div></div>
+				<div><font size="3">&nbsp;или в папку &nbsp;</font></div>
+				<div>
+				  <div><br /></div>
+				  <div>
+					<div class="su-note" style="box-sizing: border-box; border: 1px solid rgb(229, 229, 92); font-family: 'Source Sans Pro', sans-serif; margin: 0px 0px 1.5em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(115, 115, 115); font-size: 16px; line-height: 25.600000381469727px; background-color: rgb(255, 255, 255); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+					  <div class="su-note-inner su-clearfix" style="box-sizing: border-box; border: 1px solid rgb(255, 255, 224); font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 1em; vertical-align: baseline; background-color: rgb(255, 255, 102); color: rgb(51, 51, 51); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"><span style="color: rgb(0, 0, 0); font-family: verdana; font-size: medium; line-height: normal;">/nvram/md/NVRAM/NVD_IMEI/MP0B_001</span></div></div></div></div>
+				<div><span style="font-size: medium;"><b>перезаписав оригинал</b></span></div></div>
+			  <div><span style="font-size: medium;"><b><br /></b></span></div>
+			  <div><font size="3"><b style="color: rgb(51, 153, 102);">7) </b>Перезагружаемся..</font></div></div></div></div><hr>
+		Также, многие пользователи отписываются, что восстановление IMEI возможно путем полной перепрошивки на заводскую прошивку, с полными вайпами и соответствующей перепрошивкой ядра и рекавери.
+	  </font></span></body></html>
+

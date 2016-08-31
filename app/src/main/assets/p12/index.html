@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <head>
+  </head>
+  <body><span style="line-height: 1.5;">
+	  <center><font color="#de6909" size=6>Получение SuperCID</font></center><p></p>
+	<hr>
+	<p></p>
+	<font color=white><font size=3><font color="#de6909" size=5>Что такое SuperCID:</font><br>
+		<b>SuperCID</b>- это изменение идентификационного номера региона телефона на 11111111. Это позволит устанавливать ЛЮБЫЕ RUU и hboot, а также OTA обновления. Очень полезная вещь. Делается сразу после S-OFF.
+		<p></p>
+		<font color="#de6909" size=5>Требования:<br></font>
+		<font color=#de6909><b>1)</b></font> Наличие S-OFF<br>
+		<font color=#de6909><b>2)</b></font> Прямые ручки
+		<p></p>
+		<font color="#de6909" size=5>Получение:</font><br>
+		Открываем командную строку и заходим в папку с adb и fastboot и вводим (до этого переведем сам телефон в режим фастбут):<p></p>
+		<hr>
+		fastboot oem writecid 11111111<br>
+		fastboot reboot-bootloader<br>
+		<hr><p></p>
+		Для проверки можем ввести команду:<p></p>
+		<hr>
+		fastboot getvar cid
+		<hr><p></p>
+		<font color="#de6909" size=5>* Примечание: </font>вместо 11111111 в команде fastboot oem writecid можно вставить любой желаемый CID!
+	  </font></font></span></body></html>

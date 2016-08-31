@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  </head>
+  <body><span style="line-height: 1.5;">
+	  <div style="text-align: center; font-weight: bold;"><big style="color: #de6909;"><big>Как настроить чтение и запись на карту памяти SD <span style="color: rgb(0, 102, 0);">(Нужен ROOT)<br>
+			</span></big></big></div>
+	  <div style="text-align: left;">
+		<div style="color: rgb(255, 255, 255);">Как
+		  стало известно, компания Google запретила сторонним приложениям писать
+		  на внешнюю карту памяти SD, кроме гнезда расположенной в
+		  /storage/extSdCard/Android/data. В связи с этим, многие приложения ещё
+		  не оптимизированы под Android 4.4 KitKat.</div>
+		<div style="color: rgb(255, 255, 255);">Чтобы исправить эту ситуацию, необходимо выполните один из способов ниже:</div>
+		<div style="color: rgb(0, 0, 0);"><br>
+		</div>
+		<div style="font-weight: bold; color: rgb(204, 102, 0);"><big><span style="color: rgb(204, 102, 204);">Способ №1: Автоматическая правка файла platform.xml</span></big></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">1.</span> <span style="color: rgb(255, 255, 255);">Скачиваем и устанавливаем эту программу: </span><a style="color: rgb(255, 153, 0);" href="https://play.google.com/store/apps/details?id=nextapp.sdfix">&reg; NextApp SDFix</a></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">2.</span> <span style="color: rgb(255, 255, 255);">Запускаем программу.</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">3.</span> <span style="color: rgb(255, 255, 255);">После появления экрана приветствия нажимаем кнопку &laquo;Continue&raquo;.</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">4.</span> <span style="color: rgb(255, 255, 255);">Вставляем галочку напротив надписи &laquo;Check this box and then tap Continue&raquo;.</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">5.</span> <span style="color: rgb(255, 255, 255);">Снова нажимаем на кнопку &laquo;Continue&raquo;.</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">6.</span> <span style="color: rgb(255, 255, 255);">Ждём окончание процесса и перезагружаем устройство.</span></div>
+		<div style="font-weight: bold; color: rgb(204, 102, 204);"><big><br>
+		  </big></div>
+		<div style="font-weight: bold; color: rgb(204, 102, 204);"><big>Способ №2: Ручная правка файла platform.xml</big></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">1.</span> <span style="color: rgb(255, 255, 255);">Переходим в системную директорию /system/etc/permissions</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">2.</span> <span style="color: rgb(255, 255, 255);">Открываем
+			файл platform.xml с помощью редактора текста и ищем строчку:<br>
+			<font size=2>&lt;permission name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;</font></span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">3.</span> <span style="color: rgb(255, 255, 255);">Добавляем дополнительную строчку &lt;group gid="media_rw" /&gt;, как на этом скриншоте (Выделено красной линией)!</span></div>
+		<p><img src="4057203.jpg"></p>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">4.</span> <span style="color: rgb(255, 255, 255);">Сохраняем изменения.</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">5.</span> <span style="color: rgb(255, 255, 255);">Нажимаем и удерживаем файл platform.xml, затем жмём "Разрешение" выставляем права 644(rw-r--r--) (В виде буквы Г) и жмём "Ок".</span></div>
+		<div style="color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(0, 153, 0);">6.</span> <span style="color: rgb(255, 255, 255);">Перезагружаем телефон.</span></div>
+		<big style="color: rgb(204, 0, 0);"><big><span style="color: rgb(0, 102, 0);"></span></big></big></div>
+	  </div>
+	</span> </body>
+</html>

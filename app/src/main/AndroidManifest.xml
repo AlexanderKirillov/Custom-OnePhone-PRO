@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nowenui.customonephonepro">
+	
+	    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+
+    <application
+        android:icon="@drawable/htcicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.nowenui.customonephonepro.SplashActivity"
+            android:label="@string/app_name1"
+             android:theme="@style/AppTheme1" 
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nowenui.customonephonepro.MainActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8"></head>
+  <head>
+  </head>
+  <body><span style="line-height: 1.5;">
+	  <center><STRONG><font color="#de6909" size=5>Убираем надпись ***TAMPERED*** в бутлоадере HTC One M7</font></STRONG></center><br/>
+	<font color=white><font size=3><font color="#de6909" size=5> <b>Требования</b></font><br>
+		- S-Off<br>
+		- Root-права<br>
+		- Включенная отладка по USB<p></p>
+		<font color="#de6909" size=5><b>Приступаем:</b></font><br>
+		<font color="#de6909">1)</font> На ПК запускаем командную строку<br>
+		<font color="#de6909">2)</font> Переходим в папку с adb и fastboot (например, cd c:\android)<br>
+		<font color="#de6909">3)</font> Убедимся, что телефон виден на ПК: <hr color="#de6909">
+		adb devices<hr color="#de6909">
+		Потом вводим следующие команды<br><hr color="#de6909">
+		adb shell<p></p>
+		su<p></p>
+		echo -ne '\x00' | dd of=/dev/block/mmcblk0p7 bs=1 seek=4265988 conv=notrunc<p></p>
+		exit<p></p>
+		exit<p></p>
+		adb reboot bootloader<hr color="#de6909"><br>
+		Для Вашего удобства каждая команда отделена друг от друга. Вводите осторожно, без опечаток!
+	  </font></font></span></body></html>
